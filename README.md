@@ -1,5 +1,9 @@
 # labyrinth_maze
 
+### 前言
+
+c语言编写的一个轻量级迷宫小游戏。
+
 ### 迷宫菜单
 
 <img src="README.assets\image-20230930223612110.png" alt="image-20230930223612110" style="zoom:80%;" />
