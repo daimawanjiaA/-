@@ -256,7 +256,7 @@ void special_thing(int **maze, int len) //迷宫标记特殊事件
                     if (abs(m + n) == 1)
                         if (maze[x + m][y + n] < 7 && maze[x + m][y + n] > 0)
                             mark--;
-            ran = rand() % 15; //添加特殊事件
+            ran = rand() % 40; //添加特殊事件
             if (mark > 0)
             {
                 switch (ran)
@@ -275,6 +275,15 @@ void special_thing(int **maze, int len) //迷宫标记特殊事件
                     break;
                 case 5:
                     maze[x][y] = 4; //代表特殊传送
+                    break;
+                case 6:
+                    maze[x][y] = 3; //代表特殊任务，有NPC
+                    break;
+                case 7:
+                    maze[x][y] = 3; //代表特殊任务，有NPC
+                    break;
+                case 8:
+                    maze[x][y] = 3; //代表特殊任务，有NPC
                     break;
                 }
                 if (ran >= 4 && ran <= 7) //代表时间加成

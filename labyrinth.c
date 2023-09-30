@@ -6,7 +6,7 @@ int main()
     //printf("按任意键启动程序");
     menu(loca);
     getchar();
-    system("cause");
+    system("Pause");
     FILE *fp;
     if ((fp = fopen("record.txt", "a")) == NULL)
         printf("游戏记录存入失败！");
